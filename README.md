@@ -80,7 +80,8 @@ def click_and_retrieve(index, img, img_list_length):
     try:
         img.click()
         time.sleep(2.5)
-        #driver.implicitly_wait(5)
+        #driver.implicitly_wait(5) # 내용이 충분히 로딩 될때까지 혹은 최대 지정한 시간(초)까지 기다린다.  
+                                   # 하지만 세션당 1회이기 때문에 반복지연을 위해 time.sleep()을 사용했다.
         src = driver.find_element_by_xpath(
             '//*[@id="Sva75c"]/div/div/div[3]/div[2]/c-wiz/div[1]/div[1]/div/div[2]/a/img').get_attribute('src')
         if src.split('.')[-1] == "png":
