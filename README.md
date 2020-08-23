@@ -1,4 +1,4 @@
-# Image-crawler
+# Image-crawler (Google-Chrome, MS-Edge)
 
 ### 필요한 모듈
 ```bash
@@ -227,7 +227,7 @@ path = "D:/0DB/Jellyfish"
 date = "2020.08.23"
 
 # 드라이버 경로 지정 (Microsoft Edge)
-#driver = webdriver.Edge("C:/Users/user/msedgedriver") # 마소엣지
+#driver = webdriver.Edge("D:/edge/msedgedriver.exe") # 마소엣지
 driver = webdriver.Chrome("D:/chrome/chromedriver.exe") # 구글크롬
 
 # 크롤링한 이미지 수
